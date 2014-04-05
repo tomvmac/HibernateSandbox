@@ -1,4 +1,4 @@
-package com.tom.persist;
+package persist;
 
 import com.tom.entities.Person;
 import com.tom.hibernate.HibernateConfig;
@@ -42,7 +42,7 @@ public class PersonPersistTest {
     public void getPerson(){
         Query query = session.createQuery("from Person person where person.personId=:id").setInteger("id", 1);
         Person person = (Person) query.uniqueResult();
-        Assert.assertEquals(person.getAge(), 40);
+        Assert.assertEquals(person.getAge(), 38);
     }
 
 
