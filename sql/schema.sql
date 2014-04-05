@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[Person](
+	[personId] [int] IDENTITY(1,1) NOT NULL,
+	[firstName] [varchar](255) NULL,
+	[lastName] [varchar](255) NULL,
+	[age] [int] NULL,
+CONSTRAINT [PK_PERSON_ID] PRIMARY KEY CLUSTERED
+(
+	[personId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
